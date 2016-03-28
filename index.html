@@ -2,14 +2,18 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<!-- title of the application -->
 		<title>Ticket App</title>
+		<!-- links the stylesheets essential for laoading the files -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 		<link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.0.6-master-31787c0/angular-material.css'>
 		<link rel='stylesheet prefetch' href='https://material.angularjs.org/1.0.6-master-31787c0/docs.css'>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<!-- By using AppCtrl we can use controllers in js files -->
 		<div ng-controller="AppCtrl" ng-cloak="" class="carddemoInCardActions" ng-app="MyApp">
+			<!-- header contains logo and buttons for languages -->
 			<header>
 				<div class="toolbardemoBasicUsage" ng-cloak="" ng-app="MyApp">
 					<md-content>
@@ -26,1101 +30,1252 @@
 							<md-button id = "others-btn" aria-label="Others">	Others </md-button>
 							<md-button id = "about-btn" aria-label="About Us"> About Us </md-button>
 						</div>
-					</md-toolbar>
-					
+					</md-toolbar>	
 				</div>
 			</header> 
-			
+			<!-- Telugu language movies, contains details in the form of cards -->
 			<div id = "telugu" class = "slides">
-				<slick class="md-padding" infinite=true slides-to-show=3 arrows=true slides-to-scroll=3 layout-xs="column" style="overflow-x: hidden;" layout="row">
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+				<!-- each division is kept in a card -->
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name1</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name2</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name3</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name4</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name5</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name6</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-				</slick>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>	
 			</div>
-
+			<!-- Hindi language movies, contains details in the form of cards -->
 			<div id = "hindi" class = "slides">
-				<slick class="md-padding" infinite=true slides-to-show=3 arrows=true slides-to-scroll=3 layout-xs="column" style="overflow-x: hidden;" layout="row">
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+				<!-- each division is kept in a card -->
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name1</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name2</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name3</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name4</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name5</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name6</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-				</slick>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
 			</div>
-
-			<div id = "english" class = "slides">
-				<slick class="md-padding" infinite=true slides-to-show=3 arrows=true slides-to-scroll=3 layout-xs="column" style="overflow-x: hidden;" layout="row">
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+			<!-- English language movies, contains details in the form of cards -->
+			<div id = "english" class = "slides">	
+				<!-- each division is kept in a card -->
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name1</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name2</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name3</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name4</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name5</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name6</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-				</slick>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
 			</div>
-
+			<!-- other  language movies, contains details in the form of cards -->
 			<div id = "others" class = "slides">
-				<slick class="md-padding" infinite=true slides-to-show=3 arrows=true slides-to-scroll=3 layout-xs="column" style="overflow-x: hidden;" layout="row">
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+				<!-- each division is kept in a card -->	
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name1</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name2</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name3</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name4</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex>
-									<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-								</div>
-								<div flex>
-									<md-card-content>
-										<p> Hello world!</p>
-									</md-card-content>
-								</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name5</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-
-					<div flex layout-align:"center center" class="card" >
-						<md-card>
-							<div layout="row" layout-sm="column">
-								<div flex> <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> </div>
-								<div flex>
-									<md-card-content><p> Hello world!</p></md-card-content>
-								</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
 							</div>
-							<md-card-title>
-								<md-card-title-text>
-									<span class="md-headline">Movie Name6</span>
-								</md-card-title-text>
-							</md-card-title>
-							<md-card-actions layout="row" layout-align="start center">
-								<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
-									<md-content>
-										<md-tabs md-dynamic-height="" md-border-bottom="">
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-											<md-tab label="one">
-												<md-content class="md-padding">
-													<h1 class="md-display-2">Tab One</h1>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-												</md-content>
-											</md-tab>
-										</md-tabs>
-									</md-content>
-								</div>
-							</md-card-actions>
-						</md-card>
-					</div>
-				</slick>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<div class="card" >
+					<!-- this div contains card -->
+					<md-card>
+						<!-- image and movie verdict is flexed -->
+						<div layout="row" layout-sm="column">
+							<div flex>
+								<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
+							</div>
+							<div flex>
+							<!-- movie verdict is written here -->
+							<md-card-content>
+								<p> Hello world!</p>
+								</md-card-content>
+							</div>
+						</div>
+						<!-- movie title is written here -->
+						<md-card-title>
+							<md-card-title-text>
+								<span class="md-headline">Movie Name1</span>
+							</md-card-title-text>
+						</md-card-title>
+						<!-- movie details are displayed in tabs inside the card -->
+						<md-card-actions layout="row" layout-align="start center">
+							<div ng-cloak="" class="tabsdemoDynamicHeight" ng-app="MyApp">
+								<md-content>
+									<!-- each day is displayed as a tab -->
+									<md-tabs md-dynamic-height="" md-border-bottom="">
+										<md-tab label="today">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="tomorrow">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+										<md-tab label="then">
+											<md-content class="md-padding">
+												<h1 class="md-display-2">Tab One</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+											</md-content>
+										</md-tab>
+									</md-tabs>
+								</md-content>
+							</div>
+						</md-card-actions>
+					</md-card>
+				</div>
 			</div>
-
 		</div>
-
-
 		<!--
-		Copyright 2016 Google Inc. All Rights Reserved. 
-		Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+		includes the script files required for loading a page
 		-->
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js'></script>
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js'></script>
